@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/semantic_react_test/static/css/main.3981b772.chunk.css",
+    "main.js": "/semantic_react_test/static/js/main.f54de302.chunk.js",
+    "main.js.map": "/semantic_react_test/static/js/main.f54de302.chunk.js.map",
+    "runtime~main.js": "/semantic_react_test/static/js/runtime~main.28905b3c.js",
+    "runtime~main.js.map": "/semantic_react_test/static/js/runtime~main.28905b3c.js.map",
+    "static/css/2.a71405f2.chunk.css": "/semantic_react_test/static/css/2.a71405f2.chunk.css",
+    "static/js/2.35b4235c.chunk.js": "/semantic_react_test/static/js/2.35b4235c.chunk.js",
+    "static/js/2.35b4235c.chunk.js.map": "/semantic_react_test/static/js/2.35b4235c.chunk.js.map",
+    "index.html": "/semantic_react_test/index.html",
+    "precache-manifest.d328f399dc4ab1e5567155bcdb1b36df.js": "/semantic_react_test/precache-manifest.d328f399dc4ab1e5567155bcdb1b36df.js",
+    "service-worker.js": "/semantic_react_test/service-worker.js",
+    "static/css/2.a71405f2.chunk.css.map": "/semantic_react_test/static/css/2.a71405f2.chunk.css.map",
+    "static/css/main.3981b772.chunk.css.map": "/semantic_react_test/static/css/main.3981b772.chunk.css.map",
+    "static/media/semantic.min.css": "/semantic_react_test/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/logo.svg": "/semantic_react_test/static/media/logo.5d5d9eef.svg"
+  }
+}
