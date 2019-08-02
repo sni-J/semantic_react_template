@@ -1,0 +1,28 @@
+.App {
+  background-color: #f7f7f7;
+}
+
+.App-header {
+  background-color: Black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 5px;
+  border-top: 2px solid cyan;
+}
+
+.App-logo {
+
+}
+
+.App-body {
+  padding: 2vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+  color: black;
+}
