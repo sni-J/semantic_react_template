@@ -17,6 +17,30 @@
   padding: 5px;
 }
 
+.navbar .menuIconDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.navbar .menuIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transform: rotate(-180deg);
+  transition: all .5s ease;
+}
+
+.navbar .menuIcon.visible {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: all .5s ease;
+}
+
 .navItem {
   max-height: 0;
   transition: max-height .5s ease-out;

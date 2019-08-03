@@ -50,17 +50,29 @@ export default class Navbar extends Component {
             </Menu.Item>
           </Menu.Menu>
           <Menu.Menu position="right">
-            <Menu.Item>
+            <Menu.Item header>
               <Checkbox
                 label={
-                  <div>
+                  <div className='menuIconDiv'>
                   <Icon
-                  name={
-                    (visible && 'x') || 'bars'
-                  }
-                  onClick={this.mobileMenuSwitch}
-                  fitted
-                  size='large'
+                    name='bars'
+                    onClick={this.mobileMenuSwitch}
+                    fitted
+                    size='large'
+                    className={
+                      'menuIcon' +
+                      ((!visible && ' visible') || '')
+                    }
+                  />
+                  <Icon
+                    name='x'
+                    onClick={this.mobileMenuSwitch}
+                    fitted
+                    size='large'
+                    className={
+                      'menuIcon' +
+                      ((visible && ' visible') || '')
+                    }
                   />
                   </div>
                 }
