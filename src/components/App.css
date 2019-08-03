@@ -3,14 +3,32 @@
 }
 
 .App-header {
-  background-color: Black;
+  background-color: #333;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 5px;
   border-top: 2px solid cyan;
+  overflow: hidden;
+}
+
+.navbar {
+  margin-bottom: 0!important;
+  padding: 5px;
+}
+
+.navItem {
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+.navItem .menu .menu {
+  padding: 5px;
+}
+
+.navItem.mobile_open {
+  max-height: 100vh;
+  transition: max-height .5s ease-out;
 }
 
 .App-logo {
