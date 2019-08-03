@@ -18,12 +18,14 @@ export default class Navbar extends Component {
   }
 
   handleItemClick = (e, {name}) => {
-    this.setState(()=>({activeItem: name}))
+    this.mobileMenuSwitch(e)
     this.props.handleItemClick(e, {name})
   }
 
   mobileMenuSwitch = (e) => {
-    this.setState(state => ({ visible: !state.visible }))
+    if(window.innerWidth < Responsive.onlyTablet.minWidth){
+      this.setState(state => ({ visible: !state.visible }))
+    }
   }
 
   render(){
