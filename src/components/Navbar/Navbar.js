@@ -6,6 +6,7 @@ import {
   Responsive,
   Icon,
   Checkbox,
+  Divider,
 } from 'semantic-ui-react'
 import logo from '../logo.svg'
 import 'semantic-ui-css/semantic.min.css'
@@ -14,7 +15,8 @@ const menuItem = ['home', 'messages', 'friends']
 
 export default class Navbar extends Component {
   state = {
-    visible: window.innerWidth >= Responsive.onlyTablet.minWidth
+    visible: window.innerWidth >= Responsive.onlyTablet.minWidth,
+    iconRotating: ''
   }
 
   handleItemClick = (e, {name}) => {
@@ -23,14 +25,17 @@ export default class Navbar extends Component {
   }
 
   mobileMenuSwitch = (e) => {
-    if(window.innerWidth < Responsive.onlyTablet.minWidth){
-      this.setState(state => ({ visible: !state.visible }))
+    if(window.innerWidth <= Responsive.onlyMobile.maxWidth){
+      this.setState(state => ({ visible: !state.visible, iconRotating: ' rotating' }))
+      setTimeout(
+        () => {this.setState(state => ({iconRotating: ''}))}
+      , 500)
     }
   }
 
   render(){
 
-    const { visible } = this.state
+    const { visible, iconRotating } = this.state
     const { activeItem, color, login } = this.props
 
     return (
@@ -63,7 +68,8 @@ export default class Navbar extends Component {
                     size='large'
                     className={
                       'menuIcon' +
-                      ((!visible && ' visible') || '')
+                      ((!visible && ' visible') || '') +
+                      iconRotating
                     }
                   />
                   <Icon
@@ -73,7 +79,8 @@ export default class Navbar extends Component {
                     size='large'
                     className={
                       'menuIcon' +
-                      ((visible && ' visible') || '')
+                      ((visible && ' visible') || '') +
+                      iconRotating
                     }
                   />
                   </div>
@@ -114,6 +121,10 @@ export default class Navbar extends Component {
                 })
               }
             </Menu.Menu>
+            <Responsive
+              {...Responsive.onlyMobile}
+              as={Divider}
+            />
             <Menu.Menu position='right'>
               <Menu.Item>
                 <Input inverted transparent icon="search" placeholder='Search...' />

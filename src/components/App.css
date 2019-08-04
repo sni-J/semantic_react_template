@@ -6,7 +6,7 @@
   background-color: #333;
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
+  font-size: 1.5em;
   color: white;
   border-top: 2px solid cyan;
   overflow: hidden;
@@ -22,8 +22,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .navbar .menuIcon {
@@ -32,6 +32,11 @@
   right: 0;
   opacity: 0;
   transform: rotate(-180deg);
+}
+
+.navbar .menuIcon.rotating {
+  opacity: 0;
+  transform: rotate(180deg);
   transition: all .5s ease;
 }
 
@@ -43,7 +48,7 @@
 
 .navItem {
   max-height: 0;
-  transition: max-height .5s ease-out;
+  transition: max-height .5s cubic-bezier(0, 1, 0, 1);
 }
 
 .navItem .menu .menu {
@@ -52,11 +57,13 @@
 
 .navItem.mobile_open {
   max-height: 100vh;
-  transition: max-height .5s ease-out;
+  transition: max-height .5s ease-in-out;
 }
 
-.App-logo {
-
+@media only screen and (max-width: 767px) {
+  .navItem .menu .menu:last-child {
+    padding-bottom: 1.5em;
+  }
 }
 
 .App-body {
