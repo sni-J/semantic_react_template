@@ -27,10 +27,8 @@ export default class App extends Component {
           </Navbar>
         </div>
         <div className="App-body">
-          <Container>
-            <TabContent {...this.state}>
-            </TabContent>
-          </Container>
+          <TabContent {...this.state}>
+          </TabContent>
         </div>
       </div>
     )

@@ -1,5 +1,6 @@
 .App {
   background-color: #f7f7f7;
+  min-height: 100vh;
   --theme-color: 0, 255, 255;
 }
 
@@ -7,18 +8,21 @@
   background-color: #333;
   display: flex;
   flex-direction: column;
-  font-size: 1.5em;
   color: white;
   border-top: 2px solid rgb(var(--theme-color));
   overflow: hidden;
 }
 
 .App-body {
-  padding: 2vh;
-  background-color: white;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1em;
+}
+
+.App-body .container {
+  background-color: white;
   color: black;
+  padding: 2vh;
 }
