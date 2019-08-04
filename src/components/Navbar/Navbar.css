@@ -37,10 +37,6 @@
   transition: max-height .5s cubic-bezier(0, 1, 0, 1);
 }
 
-.navItem .menu .menu {
-  padding: 5px;
-}
-
 .navItem .menu .menu .active.item {
   background-color: rgba(var(--theme-color), 0.5)!important;
 }

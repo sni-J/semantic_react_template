@@ -93,7 +93,7 @@ export default class Navbar extends Component {
         <div className={
           'navItem'+((visible && ' mobile_open')||'')
         }>
-          <Menu inverted secondary stackable>
+          <Menu inverted secondary stackable className='navbar'>
             <Responsive
               minWidth={Responsive.onlyTablet.minWidth}
               as={Menu.Menu}
