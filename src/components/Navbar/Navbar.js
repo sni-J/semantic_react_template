@@ -10,6 +10,7 @@ import {
 } from 'semantic-ui-react'
 import logo from '../logo.svg'
 import 'semantic-ui-css/semantic.min.css'
+import './Navbar.css'
 
 const menuItem = ['home', 'messages', 'friends']
 
@@ -36,7 +37,7 @@ export default class Navbar extends Component {
   render(){
 
     const { visible, iconRotating } = this.state
-    const { activeItem, color, login } = this.props
+    const { activeItem, login } = this.props
 
     return (
       <Container>
@@ -92,7 +93,7 @@ export default class Navbar extends Component {
         <div className={
           'navItem'+((visible && ' mobile_open')||'')
         }>
-          <Menu secondary inverted stackable>
+          <Menu inverted secondary stackable>
             <Responsive
               minWidth={Responsive.onlyTablet.minWidth}
               as={Menu.Menu}
@@ -115,7 +116,6 @@ export default class Navbar extends Component {
                       name={menu}
                       active={activeItem === menu}
                       onClick={this.handleItemClick}
-                      color={color}
                     />
                   )
                 })

@@ -1,0 +1,57 @@
+.navbar {
+  margin-bottom: 0!important;
+  padding: 5px;
+}
+
+.navbar .menuIconDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.navbar .menuIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transform: rotate(-180deg);
+}
+
+.navbar .menuIcon.rotating {
+  opacity: 0;
+  transform: rotate(180deg);
+  transition: all .5s ease;
+}
+
+.navbar .menuIcon.visible {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: all .5s ease;
+}
+
+.navItem {
+  max-height: 0;
+  transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+}
+
+.navItem .menu .menu {
+  padding: 5px;
+}
+
+.navItem .menu .menu .active.item {
+  background-color: rgba(var(--theme-color), 0.5)!important;
+}
+
+.navItem.mobile_open {
+  max-height: 100vh;
+  transition: max-height .5s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+  .navItem .menu .menu:last-child {
+    padding-bottom: 1.5em;
+  }
+}

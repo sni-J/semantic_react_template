@@ -11,7 +11,6 @@ export default class App extends Component {
     this.handleItemClick = this.handleItemClick.bind(this)
     this.state = {
       activeItem: 'home',
-      color: 'teal',
       login: 'login'
     }
   }
