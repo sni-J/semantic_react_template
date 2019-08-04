@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c53866f37a7dffa862bec7bb67042ea5",
+    "revision": "abf5f1ff3b73d19d9fbc305756072c09",
     "url": "/semantic_react_test/index.html"
   },
   {
-    "revision": "d731c45f84224b53fd4a",
+    "revision": "b59485d61eb7b928e2a1",
     "url": "/semantic_react_test/static/css/2.a71405f2.chunk.css"
   },
   {
-    "revision": "eee53b1f533ea82c8a91",
-    "url": "/semantic_react_test/static/css/main.2b87c0ed.chunk.css"
+    "revision": "e9ece8328859092e7462",
+    "url": "/semantic_react_test/static/css/main.2226032b.chunk.css"
   },
   {
-    "revision": "d731c45f84224b53fd4a",
-    "url": "/semantic_react_test/static/js/2.bab969fd.chunk.js"
+    "revision": "b59485d61eb7b928e2a1",
+    "url": "/semantic_react_test/static/js/2.d1edaeb4.chunk.js"
   },
   {
-    "revision": "eee53b1f533ea82c8a91",
-    "url": "/semantic_react_test/static/js/main.c953927c.chunk.js"
+    "revision": "e9ece8328859092e7462",
+    "url": "/semantic_react_test/static/js/main.ec2d3716.chunk.js"
   },
   {
     "revision": "99b7e97df7e1f4655f0f",
