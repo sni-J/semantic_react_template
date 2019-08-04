@@ -90,7 +90,7 @@ export default class Navbar extends Component {
             </Menu.Item>
           </Menu.Menu>
         </Responsive>
-        <div className={
+        <Container className={
           'navItem'+((visible && ' mobile_open')||'')
         }>
           <Menu inverted secondary stackable className='navbar'>
@@ -135,7 +135,7 @@ export default class Navbar extends Component {
               />
             </Menu.Menu>
           </Menu>
-        </div>
+        </Container>
       </Container>
     )
   }
