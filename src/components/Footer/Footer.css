@@ -1,0 +1,15 @@
+.footerContainer {
+  display: flex!important;
+  flex-direction: column-reverse;
+}
+
+.footer {
+  margin-bottom: 0!important;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerItem .menu .menu:first-child {
+    padding-top: 1em;
+  }
+}

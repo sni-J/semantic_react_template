@@ -4,6 +4,7 @@ import 'semantic-ui-css/semantic.min.css'
 import './App.css'
 import Navbar from './Navbar/Navbar.js'
 import TabContent from './TabContent/TabContent.js'
+import Footer from './Footer/Footer.js'
 
 export default class App extends Component {
   constructor(props) {
@@ -29,6 +30,10 @@ export default class App extends Component {
         <div className="App-body">
           <TabContent {...this.state}>
           </TabContent>
+        </div>
+        <div className='App-footer'>
+          <Footer>
+          </Footer>
         </div>
       </div>
     )
