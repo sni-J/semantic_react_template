@@ -12,7 +12,8 @@ export default class App extends Component {
     this.handleItemClick = this.handleItemClick.bind(this)
     this.state = {
       activeItem: 'home',
-      login: 'login'
+      login: 'login',
+      dark: false
     }
   }
 
@@ -20,11 +21,17 @@ export default class App extends Component {
     this.setState({ activeItem: name })
   }
 
+  themeSwitch = (e) => {
+    this.setState((prevState) => ({ dark: !prevState.dark }))
+  }
+
   render() {
+    const { dark } = this.state
+
     return (
-      <div className="App">
+      <div className={"App" + ((dark && ' dark') || '')}>
         <div className="App-header">
-          <Navbar handleItemClick={this.handleItemClick} {...this.state}>
+          <Navbar handleItemClick={this.handleItemClick} themeSwitch={this.themeSwitch} {...this.state}>
           </Navbar>
         </div>
         <div className="App-body">

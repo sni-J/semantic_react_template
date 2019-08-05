@@ -4,7 +4,17 @@
   flex-direction: column;
   min-height: -webkit-fill-available;
   --theme-color: 0, 255, 255;
+  --App-body-bg-color: #fff;
+  --App-body-color: #000;
+  transition: all .5s ease;
   font-size: calc(14px + .3vmin);
+}
+
+.App.dark{
+  background-color: #555;
+  --App-body-bg-color: #444;
+  --App-body-color: #fff;
+  transition: all .5s ease;
 }
 
 .App-header {
@@ -14,6 +24,7 @@
   color: white;
   border-top: 2px solid rgb(var(--theme-color));
   overflow: hidden;
+  box-shadow: 0 0 .1em .1em rgba(0, 0, 0, .6);
 }
 
 .App-body {
@@ -26,14 +37,17 @@
 }
 
 .App-body .container {
-  background-color: white;
-  color: black;
+  background-color: var(--App-body-bg-color);
+  color: var(--App-body-color);
   padding: 2vh;
+  box-shadow: .1em .1em .2em 0 rgba(0, 0, 0, .6);
+  transition: all .5s ease;
 }
 
 .App-footer{
-  background-color: #444;
+  background-color: #3f3f3f;
   display: flex;
   flex-direction: column-reverse;
   color: white;
+  box-shadow: 0 0 .1em .1em rgba(0, 0, 0, .6);
 }

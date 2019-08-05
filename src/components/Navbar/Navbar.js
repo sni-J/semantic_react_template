@@ -34,10 +34,15 @@ export default class Navbar extends Component {
     }
   }
 
+  themeSwitch = (e) => {
+    this.mobileMenuSwitch(e)
+    this.props.themeSwitch(e)
+  }
+
   render(){
 
     const { visible, iconRotating } = this.state
-    const { activeItem, login } = this.props
+    const { activeItem, login, dark } = this.props
 
     return (
       <Container>
@@ -62,28 +67,28 @@ export default class Navbar extends Component {
               <Checkbox
                 label={
                   <div className='menuIconDiv'>
-                  <Icon
-                    name='bars'
-                    onClick={this.mobileMenuSwitch}
-                    fitted
-                    size='large'
-                    className={
-                      'menuIcon' +
-                      ((!visible && ' visible') || '') +
-                      iconRotating
-                    }
-                  />
-                  <Icon
-                    name='x'
-                    onClick={this.mobileMenuSwitch}
-                    fitted
-                    size='large'
-                    className={
-                      'menuIcon' +
-                      ((visible && ' visible') || '') +
-                      iconRotating
-                    }
-                  />
+                    <Icon
+                      name='bars'
+                      onClick={this.mobileMenuSwitch}
+                      fitted
+                      size='large'
+                      className={
+                        'menuIcon' +
+                        ((!visible && ' visible') || '') +
+                        iconRotating
+                      }
+                    />
+                    <Icon
+                      name='x'
+                      onClick={this.mobileMenuSwitch}
+                      fitted
+                      size='large'
+                      className={
+                        'menuIcon' +
+                        ((visible && ' visible') || '') +
+                        iconRotating
+                      }
+                    />
                   </div>
                 }
               />
@@ -128,6 +133,30 @@ export default class Navbar extends Component {
             <Menu.Menu position='right'>
               <Menu.Item>
                 <Input inverted transparent icon="search" placeholder='Search...' />
+              </Menu.Item>
+              <Menu.Item
+                as='a'
+                onClick={this.themeSwitch}
+              >
+                <Responsive
+                  minWidth={Responsive.onlyTablet.minWidth}
+                >
+                  <Icon
+                    name='adjust'
+                    fitted
+                  />
+                </Responsive>
+                <Responsive
+                  {...Responsive.onlyMobile}
+                >
+                  <Icon
+                    name='adjust'
+                  />
+                  {
+                    visible &&
+                    ((dark && 'Dark') || 'Light')
+                  }
+                </Responsive>
               </Menu.Item>
               <Menu.Item
                 name={login}
