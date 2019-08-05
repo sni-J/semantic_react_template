@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://sni-J.github.io/semantic_react_test",
   "dependencies": {
+    "axios": "^0.19.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
