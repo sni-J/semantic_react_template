@@ -8,6 +8,10 @@
   padding: 5px;
 }
 
+.footer .menu .item {
+  font-size: .85rem;
+}
+
 @media only screen and (max-width: 767px) {
   .footerItem .menu .menu:first-child {
     padding-top: 1em;
