@@ -22,6 +22,7 @@ export default class Footer extends Component {
           {...Responsive.onlyMobile}
           as={Menu}
           secondary
+          inverted
           className='footer'
         >
           <Menu.Menu position='left'>
@@ -29,9 +30,14 @@ export default class Footer extends Component {
               <img src={logo} alt="logo"/>
             </Menu.Item>
           </Menu.Menu>
+          <Menu.Menu position='right'>
+            <Menu.Item as='p'>
+              Template made by &nbsp;<a href="https://github.com/sni-J">sni/J</a>
+            </Menu.Item>
+          </Menu.Menu>
         </Responsive>
         <Container className='footerItem'>
-          <Menu secondary stackable className='footer'>
+          <Menu secondary inverted stackable className='footer'>
             <Responsive
               minWidth={Responsive.onlyTablet.minWidth}
               as={Menu.Menu}
@@ -55,11 +61,15 @@ export default class Footer extends Component {
               })
             }
             </Menu.Menu>
-            <Menu.Menu position='right'>
+            <Responsive
+              minWidth={Responsive.onlyTablet.minWidth}
+              as={Menu.Menu}
+              position="right"
+            >
               <Menu.Item as='p'>
                 Template made by &nbsp;<a href="https://github.com/sni-J">sni/J</a>
               </Menu.Item>
-            </Menu.Menu>
+            </Responsive>
           </Menu>
         </Container>
       </Container>
