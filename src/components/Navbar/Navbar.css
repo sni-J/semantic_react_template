@@ -32,6 +32,12 @@
   transition: all .5s ease;
 }
 
+.navbar .menu .item {
+  min-height: 1em;
+  box-sizing: content-box;
+  align-items: center;
+}
+
 .navItem {
   max-height: 0;
   transition: max-height .5s cubic-bezier(0, 1, 0, 1);
