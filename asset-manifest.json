@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/semantic_react_test/static/css/main.c8921d2f.chunk.css",
-    "main.js": "/semantic_react_test/static/js/main.f7ffc139.chunk.js",
-    "main.js.map": "/semantic_react_test/static/js/main.f7ffc139.chunk.js.map",
-    "runtime~main.js": "/semantic_react_test/static/js/runtime~main.28905b3c.js",
-    "runtime~main.js.map": "/semantic_react_test/static/js/runtime~main.28905b3c.js.map",
-    "static/css/2.a71405f2.chunk.css": "/semantic_react_test/static/css/2.a71405f2.chunk.css",
-    "static/js/2.332a9d2c.chunk.js": "/semantic_react_test/static/js/2.332a9d2c.chunk.js",
-    "static/js/2.332a9d2c.chunk.js.map": "/semantic_react_test/static/js/2.332a9d2c.chunk.js.map",
-    "index.html": "/semantic_react_test/index.html",
-    "precache-manifest.eea7a10276b8fa14d9b8db0396d3ede0.js": "/semantic_react_test/precache-manifest.eea7a10276b8fa14d9b8db0396d3ede0.js",
-    "service-worker.js": "/semantic_react_test/service-worker.js",
-    "static/css/2.a71405f2.chunk.css.map": "/semantic_react_test/static/css/2.a71405f2.chunk.css.map",
-    "static/css/main.c8921d2f.chunk.css.map": "/semantic_react_test/static/css/main.c8921d2f.chunk.css.map",
-    "static/media/semantic.min.css": "/semantic_react_test/static/media/outline-icons.ef60a4f6.woff",
-    "static/media/logo.svg": "/semantic_react_test/static/media/logo.5d5d9eef.svg"
+    "main.css": "/semantic_react_template/static/css/main.c8921d2f.chunk.css",
+    "main.js": "/semantic_react_template/static/js/main.bdf9fe69.chunk.js",
+    "main.js.map": "/semantic_react_template/static/js/main.bdf9fe69.chunk.js.map",
+    "runtime~main.js": "/semantic_react_template/static/js/runtime~main.715ab608.js",
+    "runtime~main.js.map": "/semantic_react_template/static/js/runtime~main.715ab608.js.map",
+    "static/css/2.d45ce970.chunk.css": "/semantic_react_template/static/css/2.d45ce970.chunk.css",
+    "static/js/2.332a9d2c.chunk.js": "/semantic_react_template/static/js/2.332a9d2c.chunk.js",
+    "static/js/2.332a9d2c.chunk.js.map": "/semantic_react_template/static/js/2.332a9d2c.chunk.js.map",
+    "index.html": "/semantic_react_template/index.html",
+    "precache-manifest.b6319e51ad86c8d42a88e7cb1cfcaf9e.js": "/semantic_react_template/precache-manifest.b6319e51ad86c8d42a88e7cb1cfcaf9e.js",
+    "service-worker.js": "/semantic_react_template/service-worker.js",
+    "static/css/2.d45ce970.chunk.css.map": "/semantic_react_template/static/css/2.d45ce970.chunk.css.map",
+    "static/css/main.c8921d2f.chunk.css.map": "/semantic_react_template/static/css/main.c8921d2f.chunk.css.map",
+    "static/media/semantic.min.css": "/semantic_react_template/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/logo.svg": "/semantic_react_template/static/media/logo.5d5d9eef.svg"
   }
 }
