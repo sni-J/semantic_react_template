@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/semantic_react_template/static/css/main.c8921d2f.chunk.css",
-    "main.js": "/semantic_react_template/static/js/main.bdf9fe69.chunk.js",
-    "main.js.map": "/semantic_react_template/static/js/main.bdf9fe69.chunk.js.map",
+    "main.js": "/semantic_react_template/static/js/main.262e960c.chunk.js",
+    "main.js.map": "/semantic_react_template/static/js/main.262e960c.chunk.js.map",
     "runtime~main.js": "/semantic_react_template/static/js/runtime~main.715ab608.js",
     "runtime~main.js.map": "/semantic_react_template/static/js/runtime~main.715ab608.js.map",
     "static/css/2.d45ce970.chunk.css": "/semantic_react_template/static/css/2.d45ce970.chunk.css",
     "static/js/2.332a9d2c.chunk.js": "/semantic_react_template/static/js/2.332a9d2c.chunk.js",
     "static/js/2.332a9d2c.chunk.js.map": "/semantic_react_template/static/js/2.332a9d2c.chunk.js.map",
     "index.html": "/semantic_react_template/index.html",
-    "precache-manifest.b6319e51ad86c8d42a88e7cb1cfcaf9e.js": "/semantic_react_template/precache-manifest.b6319e51ad86c8d42a88e7cb1cfcaf9e.js",
+    "precache-manifest.d8d786f3657931ffa175e1af906ea42d.js": "/semantic_react_template/precache-manifest.d8d786f3657931ffa175e1af906ea42d.js",
     "service-worker.js": "/semantic_react_template/service-worker.js",
     "static/css/2.d45ce970.chunk.css.map": "/semantic_react_template/static/css/2.d45ce970.chunk.css.map",
     "static/css/main.c8921d2f.chunk.css.map": "/semantic_react_template/static/css/main.c8921d2f.chunk.css.map",
