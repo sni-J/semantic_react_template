@@ -11,7 +11,7 @@ class HomeContent extends Component {
   state = {stargazers_count: 'Loading...', forks_count: 'Loading...'}
 
   getGithubInfo =
-    axios.get('https://api.github.com/repos/sni-J/semantic_react_test')
+    axios.get('https://api.github.com/repos/sni-J/semantic_react_template')
     .then(({data})=>{
       console.log(data.svn_url);
       const {stargazers_count, forks_count, svn_url} = data
