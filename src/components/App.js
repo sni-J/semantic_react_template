@@ -13,7 +13,7 @@ export default class App extends Component {
     this.state = {
       activeItem: 'home',
       login: 'login',
-      dark: false
+      dark: true
     }
   }
 
